@@ -29,7 +29,7 @@
 
 ```sh
 mkdir -p "$HOME/workstationdots"
-[ -d "$HOME/workstationdots/swaystation" ] || git clone https://github.com/el-toro-fuerte96/grimmstation "$HOME/workstationdots/grimmstation" --depth=1
+[ -d "$HOME/workstationdots/swaystation" ] || git clone https://github.com/el-toro-fuerte96/swaystation "$HOME/workstationdots/swaystation" --depth=1
 bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 ```
 
@@ -108,7 +108,7 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 ## Apps in each workspace
 
 | Workspace Number | Assigned Apps         |
-| :--------------: | :-------------------- |
+| :--------------: | :-------------------: |
 |        1         | Terminal              |
 |        2         | Browser               |
 |        3         | Development/Coding    |
@@ -116,7 +116,9 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 |        5         | Chat                  |
 |        6         | Design tools          |
 |        7         | Office tools          |
-|        8         | System tools and Misc |
+|        8         | video projects        |
+|        9         | games                 |
+|        10        | System tools and Misc |
 
 ---
 
