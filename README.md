@@ -29,7 +29,7 @@
 
 ```sh
 mkdir -p "$HOME/workstationdots"
-[ -d "$HOME/workstationdots/grimmstation" ] || git clone https://codeberg.org/bibjaw99/grimmstation "$HOME/workstationdots/grimmstation" --depth=1
+[ -d "$HOME/workstationdots/grimmstation" ] || git clone https://github.com/el-toro-fuerte96/grimmstation "$HOME/workstationdots/grimmstation" --depth=1
 bash "$HOME/workstationdots/grimmstation/install_scripts/install.sh"
 ```
 
@@ -91,17 +91,17 @@ bash "$HOME/workstationdots/grimmstation/install_scripts/install.sh"
 
 ### workflow
 
-![Sway](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/sway.png)
+![Sway](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/sway.png)
 
 ### waybar themes
 
 - to launch the theme selector, press `mod+shift+s` then `b`
 
-![wabar themes](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/waybarSwitching.gif)
+![wabar themes](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/waybarSwitching.gif)
 
 ### App launcher and power menu: Fuzzel
 
-![Launcher](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/launcher.png)
+![Launcher](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/launcher.png)
 
 ---
 
@@ -143,24 +143,24 @@ bash "$HOME/workstationdots/grimmstation/install_scripts/install.sh"
 
 ##### Start Page
 
-![nvim 1](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/1.png)
+![nvim 1](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/1.png)
 
 ##### File Tree : mini.files
 
-![nvim 2](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/2.png)
+![nvim 2](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/2.png)
 
 ##### Fuzzy Finder: Snacks.nvim
 
-![nvim 6](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/6.png)
+![nvim 6](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/6.png)
 
 ##### LSP Support and Autocompletion support
 
-![nvim 3](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/3.png)
+![nvim 3](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/3.png)
 
 ##### Gitsigns plugin for visual git status
 
-![nvim 4](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/4.png)
+![nvim 4](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/4.png)
 
 ##### Plugin Manager : Lazy and LSP manager : Mason
 
-![nvim 5](https://codeberg.org/bibjaw99/grimmstation-misc/raw/branch/main/screenshots/neovim/5.png)
+![nvim 5](https://github.com/el-toro-fuerte96/grimmstation-misc/raw/branch/main/screenshots/neovim/5.png)
