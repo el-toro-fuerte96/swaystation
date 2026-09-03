@@ -1,0 +1,76 @@
+/* ROOT VARIABLES */
+* {
+  filter: blur(0) !important;
+  backdrop-filter: blur(0) !important;
+  border-radius: 0px !important;
+}
+:root {
+  --toolbar-bgcolor: #000000 !important;
+  --toolbar-field-focus-border-color: #000000 !important;
+  --urlbarView-highlight-background: #d8a657 !important;
+  --urlbarView-highlight-color: #000000 !important;
+}
+
+/* navbar */
+#nav-bar {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* TAB BAR */
+#tabbrowser-tabs:not([vertical]) .tabbrowser-tab {
+  min-width: 50px !important;
+  max-width: 180px !important;
+  margin-left: 2px !important;
+}
+
+#tabbrowser-tabs:not([vertical]) .tab-stack {
+  margin-inline: 0px !important;
+}
+
+.tabbrowser-tab .tab-background {
+  background-color: #282828 !important;
+  outline: 3px solid #686868 !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  background-color: #282828 !important;
+  outline: 3px solid #d8a657 !important;
+}
+
+/* SIDEBAR (BOOKMARKS / HISTORY) */
+#sidebar-box,
+#sidebar,
+#sidebar-main {
+  background-color: #222222 !important;
+}
+
+/* Tree container */
+.sidebar-placesTree {
+  background-color: transparent !important;
+}
+
+/* Hovered item */
+.sidebar-placesTree treechildren::-moz-tree-row(hover) {
+  background-color: #282828 !important;
+}
+
+/* Selected item */
+.sidebar-placesTree treechildren::-moz-tree-row(selected) {
+  background-color: #282828 !important;
+}
+
+/* TEXT SELECTION INSIDE URL BAR */
+#urlbar-input:focus::selection {
+  background-color: #d8a657 !important;
+  color: #000000 !important;
+}
+
+#urlbar-background,
+.urlbar-background {
+  background-color: #202020 !important;
+}
+
+#appMenu-popup panelview {
+  background-color: #222222 !important;
+}

@@ -1,0 +1,193 @@
+/* ===== COLORS ===== */
+@define-color bg #222222;
+@define-color bg-tray #383838;
+
+@define-color fg #fff4d2;
+
+@define-color black #222222;
+
+@define-color border #fff4d2;
+@define-color border-muted #686868;
+
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+
+@define-color pink #d3869b;
+
+@define-color green #8ec07c;
+@define-color green-dark #689d68;
+
+@define-color red #ea6962;
+@define-color red-dark #cc241d;
+
+@define-color orange #e78a4e;
+
+@define-color yellow #f6c657;
+@define-color yellow-soft #d8a657;
+
+@define-color gray #555555;
+
+
+/* ===== GLOBAL ===== */
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  min-height: 0;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+}
+
+#custom-launcher,
+#window,
+#disk,
+#cpu,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#network,
+#clock {
+  padding-right: 3pt;
+}
+
+/* ===== WAYBAR ===== */
+window#waybar {
+  color: @fg;
+  background: @bg;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12pt;
+  font-weight: 900;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 3pt;
+}
+
+/* ===== WORKSPACES ===== */
+#workspaces button {
+  color: @fg;
+  background: @bg;
+  border: 2pt solid @border;
+  margin-right: 3pt;
+  min-width: 15pt;
+  padding: 0 3.75pt;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
+}
+
+#workspaces button:hover {
+  color: @pink;
+  border-color: @pink;
+}
+
+#workspaces button.visible,
+#workspaces button.visible:hover {
+  color: @green;
+  border-color: @green;
+}
+
+#workspaces button.urgent {
+  color: @red;
+  border-color: @red;
+}
+
+/* ===== launcher ===== */
+#custom-launcher {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
+  padding: 0 6pt;
+}
+
+/* ===== MODULE BORDERS ===== */
+#window {
+  border-bottom: 2pt solid @pink;
+}
+
+#tray {
+  border-bottom: 2pt solid @border-muted;
+  background: @bg-tray;
+  padding: 0 6pt;
+}
+
+#disk {
+  border-bottom: 2pt solid @red;
+}
+
+#cpu {
+  border-bottom: 2pt solid @orange;
+}
+
+#custom-cpu_temp {
+  border-bottom: 2pt solid @yellow-soft;
+}
+
+#custom-cpu_temp.critical {
+  color: @red-dark;
+  border-bottom: 2pt solid @red-dark;
+}
+
+#custom-cpu_temp.unknown {
+  color: @gray;
+  border-bottom: 2pt solid @gray;
+}
+
+#backlight {
+  border-bottom: 2pt solid @yellow;
+}
+
+#custom-memory {
+  border-bottom: 2pt solid @blue-dark;
+}
+
+#pulseaudio {
+  border-bottom: 2pt solid @blue;
+}
+
+#pulseaudio.muted {
+  color: @red;
+  border-bottom: 2pt solid @red;
+}
+
+#battery {
+  border-bottom: 2pt solid @green-dark;
+}
+
+#battery.critical,
+#battery.charging.critical {
+  color: @red-dark;
+  border-bottom: 2pt solid @red-dark;
+}
+
+#battery.warning,
+#battery.charging.warning {
+  color: @orange;
+  border-bottom: 2pt solid @orange;
+}
+
+#clock {
+  border-bottom: 2pt solid @green;
+}
+
+#network {
+  border-bottom: 2pt solid @pink;
+}
+
+/* ===== MODE ===== */
+#mode {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
+  padding: 0 4.5pt;
+}

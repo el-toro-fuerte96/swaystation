@@ -1,0 +1,97 @@
+return {
+	"echasnovski/mini.files",
+	version = "*",
+	event = "VeryLazy",
+	opts = {
+		options = {
+			permanent_delete = false,
+			use_as_default_explorer = true,
+		},
+		mappings = {
+			close = "q",
+			go_in = "",
+			go_in_plus = "L",
+			go_out = "",
+			go_out_plus = "H",
+			mark_goto = "'",
+			mark_set = "m",
+			reset = "<BS>",
+			reveal_cwd = ".",
+			show_help = "g?",
+			synchronize = "S",
+			trim_left = "<",
+			trim_right = ">",
+		},
+		windows = {
+			preview = true,
+			width_nofocus = 25,
+			width_focus = 30,
+			width_preview = 50,
+		},
+	},
+	keys = {
+		{
+			mode = "n",
+			"<leader>eo",
+			":lua MiniFiles.open(vim.api.nvim_buf_get_name(0),true)<cr>",
+			desc = "MiniFiles Current",
+		},
+		{
+			mode = "n",
+			"<leader>ee",
+			":lua MiniFiles.open()<cr>",
+			desc = "MiniFiles Open",
+		},
+		{
+			mode = "n",
+			"<leader>er",
+			":lua MiniFiles.reset()<cr>",
+			desc = "MiniFiles Reset",
+		},
+		{
+			mode = "n",
+			"<leader>eH",
+			":lua MiniFiles.open(vim.cmd('e ~/'))<cr>",
+			desc = "Home Dir",
+		},
+		{
+			mode = "n",
+			"<leader>ec",
+			":lua MiniFiles.open(vim.cmd('e ~/.config/nvim/lua/grimmvim/'))<cr>",
+			desc = "Nvim Config",
+		},
+		{
+			mode = "n",
+			"<leader>eC",
+			":lua MiniFiles.open(vim.cmd('e ~/.config/'))<cr>",
+			desc = "Configs Dir",
+		},
+		{
+			mode = "n",
+			"<leader>eD",
+			":lua MiniFiles.open(vim.cmd('e ~/.local/share/config_dotfiles/'))<cr>",
+			desc = "Dotfiles",
+		},
+		{
+			mode = "n",
+			"<leader>eB",
+			":lua MiniFiles.open(vim.cmd('e ~/.local/share/bookmarks/'))<cr>",
+			desc = "Bookmarks",
+		},
+		{
+			mode = "n",
+			"<leader>et",
+			":e ~/.local/share/nvim/mini.files/trash/<cr>",
+			desc = "MiniFiles Trash",
+		},
+		{
+			mode = "n",
+			"<leader>es",
+			":e ~/Pictures/screenshots/<cr>",
+			desc = "Screenshots dir",
+		},
+	},
+	config = function(_, opts)
+		require("mini.files").setup(opts)
+	end,
+}

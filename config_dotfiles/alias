@@ -1,0 +1,33 @@
+## Universal
+alias ..="cd .."
+alias ...="cd ../../"
+alias ls="eza --icons"
+alias la="ls -la"
+alias tree="eza --tree"
+alias ntree="eza --tree -I 'node_modules|dist'"
+alias vv="nvim"
+alias bsource="source .bashrc"
+alias zsource="source .bashrc"
+alias xx="exit"
+alias lg="lazygit"
+alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
+alias bt="bluetui"
+alias wm="wiremix"
+alias lf='cd "$(command lf -print-last-dir "$@")"'
+
+## Arch
+alias pac="sudo pacman"
+alias up="sudo pacman -Syyu"
+alias ref="sudo pacman -Syy"
+alias dref="sudo pacman -Fy"
+alias search="pacman -Ss"
+alias pacs="pacman -Q | wc -l"
+alias list="pacman -Q"
+alias aur_list="pacman -Qm"
+alias upArchMirrors="rate-mirrors --allow-root --protocol https arch | sudo tee /etc/pacman.d/mirrorlist"
+
+# tmux
+alias tnew="tmux new -s"
+alias tls="tmux ls"
+alias trename="tmux rename-session -t"
+alias ta="tmux a -t"

@@ -1,0 +1,189 @@
+/* ===== COLORS ===== */
+@define-color bg #222222;
+@define-color fg #ebdbb2;
+
+@define-color black #222222;
+
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+
+@define-color pink #d3869b;
+
+@define-color green #8ec07c;
+@define-color green-dark #689d68;
+
+@define-color red #ea6962;
+@define-color red-dark #cc241d;
+
+@define-color orange #e78a4e;
+
+@define-color yellow #f6c657;
+@define-color yellow-soft #d8a657;
+
+@define-color gray #555555;
+
+
+/* ===== GLOBAL ===== */
+* {
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  border-radius: 0;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 0 3pt;
+}
+
+window#waybar {
+  color: @fg;
+  background: none;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12pt;
+  font-weight: 900;
+}
+
+/* ===== COMMON MODULE STYLE ===== */
+#custom-launcher,
+#mode,
+#submap,
+#window,
+#disk,
+#cpu,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#network,
+#clock {
+  color: @fg;
+  background: @bg;
+  border: 2.5pt solid @bg;
+  padding-right: 3pt;
+}
+
+/* ===== launcher ===== */
+#custom-launcher {
+  color: @black;
+  background: @blue;
+  padding: 0 6pt;
+}
+
+/* ===== WORKSPACES ===== */
+#workspaces {
+  margin: 0;
+}
+
+#workspaces button {
+  color: @fg;
+  background: @bg;
+  border: 2.5pt solid @bg;
+  padding: 0 3.75pt;
+  margin-right: 3pt;
+  min-width: 15pt;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
+}
+
+#workspaces button:hover {
+  color: @black;
+  background: @pink;
+}
+
+#workspaces button.visible,
+#workspaces button.visible:hover {
+  color: @black;
+  background: @green;
+}
+
+#workspaces button.urgent {
+  color: @black;
+  background: @red;
+}
+
+/* ===== MODULE COLORS ===== */
+#window {
+  color: @pink;
+}
+
+#tray {
+  padding: 0 6pt;
+  background: @bg;
+}
+
+#disk {
+  color: @red;
+}
+
+#cpu {
+  color: @orange;
+}
+
+#custom-cpu_temp {
+  color: @yellow-soft;
+}
+
+#custom-cpu_temp.critical {
+  color: @red-dark;
+}
+
+#custom-cpu_temp.unknown {
+  color: @gray;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#custom-memory {
+  color: @blue-dark;
+}
+
+#pulseaudio {
+  color: @blue;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#battery {
+  color: @green-dark;
+}
+
+#battery.critical {
+  color: @red-dark;
+}
+
+#battery.warning {
+  color: @orange;
+}
+
+#clock {
+  color: @green;
+}
+
+#network {
+  color: @pink;
+}
+
+/* ===== MODE ===== */
+#submap,
+#mode {
+  color: @black;
+  background: @blue;
+  padding: 0 4.5pt;
+}

@@ -1,0 +1,17 @@
+foot
+fuzzel
+rofimoji
+pcmanfm
+xarchiver
+mate-polkit
+gnome-keyring
+gnome-disk-utility
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-user-dirs
+zathura
+zathura-pdf-poppler
+ristretto
+mpv
+ly
+firefox-developer-edition
