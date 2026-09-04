@@ -15,7 +15,7 @@ WINDOW=$(
             (if .type == "floating_con" then "FLOATING" else "TILED" end)
           ]
         | @tsv
-    ' | fuzzel --dmenu --prompt="Switch to: " --width=100
+    ' | fuzzel --dmenu --prompt="Window picker: " --width=100
 )
 
 # no input
