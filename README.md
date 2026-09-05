@@ -7,6 +7,7 @@
 - **Terminal:** Foot
 - **File Manager:** Pcmanfm
 - **Terminal File manager:** lf
+- **Media Players :** cmus (music) and mpv(video)
 - **Primary Browser:** firefox-developer-edition
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
@@ -29,11 +30,11 @@
 
 ```sh
 mkdir -p "$HOME/workstationdots"
-[ -d "$HOME/workstationdots/swaystation" ] || git clone https://github.com/el-toro-fuerte96/swaystation "$HOME/workstationdots/swaystation" --depth=1
+[ -d "$HOME/workstationdots/swaystation" ] || git clone -b main https://github.com/el-toro-fuerte96/swaystation "$HOME/workstationdots/swaystation" --depth=1
 bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 ```
 
-- if you're already done installing the base archlinux just clone the repo in `$workstationdots` (create this dir if it doesn't exist)
+- if you're already done installing the base archlinux just clone the repo in `$HOME/workstationdots` (create this dir if it doesn't exist)
 - run the `install.sh` script
 
 ## how the script works :
@@ -59,6 +60,7 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 ## folder structure of my install script :
 
 - `install.sh` will run all the scripts
+- modify the package list according to your likings
 - you can run these scripts individually as well
 
 ```sh
@@ -67,6 +69,7 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 │   └── config_dotfiles.db.json
 ├── install.sh
 ├── package_lists
+│   ├── cmus_pkg_list.txt
 │   ├── common_pkg_list.txt
 │   ├── dev_pkg_list.txt
 │   ├── flatpak_pkg_list.txt

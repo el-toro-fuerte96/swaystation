@@ -27,3 +27,4 @@ typescript
 mercurial
 shellcheck
 unixodbc
+postgresql
